@@ -190,7 +190,7 @@ Vue.component('Kanban', {
      
               <div v-if="task_item.column==4" class="Task">
               <p>Задача: {{task_item.name}}</p>
-              <p v-if="task_item.end_stamp >= 0"> Выполненено в срок</p>
+              <p v-if="task_item.end_stamp >= 0"> Выполненено в срок </p>
               <p v-else style="color: red"> ПРОСРОЧЕНО</p>
               <p>Время создания {{task_item.createdAt}}</p>
               <p>Дедлайн {{task_item.deadline_date}} </p>
